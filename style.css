@@ -57,7 +57,7 @@ a {
     margin-top: -80px;
     margin-right: 108px;
 }
-.title h1 {
+.left h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 64px;
@@ -71,7 +71,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 250px;
-    margin-bottom: 160px;
+    /* margin-bottom: 160px; */
 }
 .card {
     width: 300px;
@@ -93,12 +93,77 @@ a {
     line-height: 40px;
     margin: 16px 0;
 }
-.card-body {
-    margin: -6px 0;
+ p {
+    margin: 0 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    color: #6C6C6C;
 }
 
 /* Main section end */
+
+/* highlights section start */
+#all-highlights {
+    margin: 160px;
+    margin-left: 250px;
+}
+.highlights {
+    /* width: 470px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+.highlights .right img {
+    width: 567px;
+    height: 427px;
+}
+.highlights .left h1  {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.highlights .left p  {
+    margin-bottom: 24px;
+    width: 400px;
+}
+
+/* highlights section end */
+
+/* Footer section start */
+.footer {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.logo {
+    width: 480px;
+    height: 110px;
+}
+.icon {
+    margin: 20px 0;
+    /* vertical-align: middle; */
+}
+.icon a {
+    background-color: #E7E7E8;
+    /* font-size: 25px; */
+    padding: 3px 4px;
+    border-radius: 50%;
+    margin-right: 14px;
+    
+}
+.footer .icon a i {
+    /* width: 32px;
+    height: 32px; */
+    color: #969BAB;
+}
+.footer h5 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Footer section end */
