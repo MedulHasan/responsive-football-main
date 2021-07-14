@@ -67,6 +67,33 @@ h1 {
     font-size: 64px;
     line-height: 80px;
 }
+.title .animation {
+    position: relative;
+    color: #2D25A0;
+    -webkit-text-stroke: 0.1vw #fff;
+    text-transform: uppercase;
+}
+.container:hover .title .animation {
+    content: attr(data-text);
+    position: absolute;
+    top: 300;
+    left: 200;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke: 0vw #fff;
+    /* border-right: 2px solid #fff; */
+    overflow: hidden;
+    animation: titleAnimation 6s linear infinite;
+}
+@keyframes titleAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
 
 /* Heading Section end */
 
