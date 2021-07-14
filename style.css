@@ -1,5 +1,6 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
 
 body {
     margin: 0;
@@ -57,7 +58,7 @@ a {
     margin-top: -80px;
     margin-right: 108px;
 }
-.left h1 {
+h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 64px;
@@ -132,10 +133,104 @@ a {
 
 /* highlights section end */
 
+/* Exotic section start */
+
+.exotic {
+    position: relative;
+    color: #fff;
+    height: 650px;
+    text-align: center;
+}
+.exotic::after {
+    content: '';
+    background-image: url(./images/exotic/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1530px;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.exotic h1 {
+    padding: 50px 0;
+}
+.envato h3 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.envato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+}
+.envato img {
+    width: 240px;
+    height: 200px;
+}
+
+/* Exotic section end */
+
+/* Reviews section start */
+
+.reviews {
+    text-align: center;
+    margin: 80px 50px;
+}
+.ratting {
+    display: flex;
+    justify-content: center;
+}
+.star-icon {
+    margin-right: 10px;
+    color: #FFD400;
+}
+.all-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-comment a {
+    font-size: 36px;
+    background-color: #fff;
+}
+.reviews h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 32px;
+    width: 1100px;
+    padding: 50px 70px;
+    color: #222222;
+}
+.review-button a {
+    background-color: #6ba506;
+    padding: 20px;
+}
+
+@keyframes btnChangeColor {
+    from {background: #DA9A29; left: 0px}
+    to {background: #DA9A29; left: 208px}
+}
+
+.review-button a:hover {
+    /* background-image: #DA9A29; */
+    animation: btnChangeColor 2s linear;
+}
+/* Reviews section end */
+
+hr {
+    margin: 0 130px;
+}
+
 /* Footer section start */
 .footer {
     text-align: center;
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
 .logo {
     width: 480px;
@@ -143,19 +238,15 @@ a {
 }
 .icon {
     margin: 20px 0;
-    /* vertical-align: middle; */
 }
 .icon a {
     background-color: #E7E7E8;
-    /* font-size: 25px; */
     padding: 3px 4px;
     border-radius: 50%;
     margin-right: 14px;
     
 }
 .footer .icon a i {
-    /* width: 32px;
-    height: 32px; */
     color: #969BAB;
 }
 .footer h5 {
