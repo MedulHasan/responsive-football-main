@@ -32,6 +32,9 @@ a {
 .menu-bar .nav-left a:not(:last-child) {
     margin-right: 36px;
 }
+.mobile {
+    display: none;
+}
 .button a{
     width: 168px;
     height: 44px;
@@ -67,18 +70,16 @@ h1 {
 
 /* Heading Section end */
 
-/* Main section Start */
+/* Players section Start */
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 250px;
-    /* margin-bottom: 160px; */
 }
 .card {
     width: 300px;
     height: 474px;
     margin: 15px 15px;
-    /* border: 1px solid; */
     padding: 15px;
     background-color: #ffffff;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -103,7 +104,7 @@ h1 {
     color: #6C6C6C;
 }
 
-/* Main section end */
+/* Players section end */
 
 /* highlights section start */
 #all-highlights {
@@ -115,7 +116,6 @@ h1 {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-
 }
 .highlights .right img {
     width: 567px;
@@ -147,6 +147,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: 1530px;
     background-attachment: fixed;
+    background-position: center;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -258,3 +259,140 @@ hr {
 }
 
 /* Footer section end */
+
+
+/* responsive design for MOBILE*/
+
+@media only screen and (max-width: 688px) {
+    /* Heading section start  */
+
+    .mobile {
+        display: block;
+    }
+    .web {
+        display: none;
+    }
+    .container {
+        padding: 40px 40px;
+    }
+    .title-and-banner {
+        flex-direction: column;
+    }
+    .title {
+        margin-right: -70px;
+        margin-bottom: 50px;
+    }
+    /* Heading section end */
+
+
+    /* Players section start */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 165px;
+    }
+    /* Players section end */
+
+
+    /* highlights section start */
+    #all-highlights {
+        margin: 70px 165px;
+    }
+    .highlights {
+        flex-direction: column;
+    }
+    .highlights .left {
+        margin-bottom: 30px;
+    }
+    .highlights .left h1 {
+        font-size: 36px;
+    }
+    .highlights .left p {
+        width: 300px;
+    }
+    .highlights .right img {
+        width: 328px;
+        height: 248px;
+    }
+    /* highlights section end */
+
+
+    /* Exotic section start */
+    .exotic {
+        height: 900px;
+    }
+    .envato {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Exotic section end */
+}
+
+/* responsive design for Tab*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    /* Heading section start  */
+
+    .mobile {
+        display: block;
+    }
+    .web {
+        display: none;
+    }
+    /* .container {
+        padding: 40px 40px;
+        width: 992px;
+    }
+    .menu-bar .nav-left a:not(:last-child) {
+        margin-right: 16px;
+    } */
+    .title-and-banner {
+        flex-direction: column;
+    }
+    .title {
+        margin-right: -70px;
+        margin-bottom: 50px;
+    }
+    /* Heading section end */
+
+
+    /* Players section start */
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 136px;
+    }
+    /* Players section end */
+
+
+    /* highlights section start */
+    #all-highlights {
+        margin: 70px 136px;
+    }
+    .highlights {
+        flex-direction: row;
+        align-items: center;
+    }
+    .highlights .left {
+        margin-bottom: 30px;
+    }
+    .highlights .left h1 {
+        font-size: 36px;
+    }
+    .highlights .left p {
+        width: 300px;
+    }
+    .highlights .right img {
+        width: 328px;
+        height: 248px;
+    }
+    /* highlights section end */
+
+
+    /* Exotic section start */
+    .exotic {
+        height: 900px;
+    }
+    .envato {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Exotic section end */
+}
+
+/* responsive design for MOBILE*/
