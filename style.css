@@ -84,7 +84,7 @@ h1 {
     -webkit-text-stroke: 0vw #fff;
     /* border-right: 2px solid #fff; */
     overflow: hidden;
-    animation: titleAnimation 6s linear infinite;
+    animation: titleAnimation 10s linear infinite;
 }
 @keyframes titleAnimation {
     0% {
@@ -98,10 +98,15 @@ h1 {
 /* Heading Section end */
 
 /* Players section Start */
+.players-cont {
+    display: flex;
+    justify-content: center;
+}
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 250px;
+    justify-content: start;
+    /* margin: 0 250px; */
 }
 .card {
     width: 300px;
@@ -135,14 +140,18 @@ h1 {
 
 /* highlights section start */
 #all-highlights {
-    margin: 160px;
-    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    /* margin-left: 250px; */
 }
 .highlights {
-    /* width: 470px; */
     display: flex;
+    gap: 80px;
+    /* width: 470px; */
+    /* display: flex; */
     /* align-items: center; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .highlights .right img {
     width: 567px;
@@ -383,7 +392,7 @@ hr {
     /* Players section start */
     .players {
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 136px;
+        /* margin: 0 136px; */
     }
     /* Players section end */
 
